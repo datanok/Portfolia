@@ -1,0 +1,16 @@
+body{
+    background-color: #eae9ea;
+}
+
+
+.navbar-brand{
+    font-weight: bold;
+    
+}
+
+#examples {
+    background-color: #141918;
+}
+.card-cover{
+    height: 500px;
+}

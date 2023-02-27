@@ -1,0 +1,55 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content%}
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-10 col-lg-6">
+        <img src="{% static 'images/art.png' %}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Build Your Portfolio Today</h1>
+        <p class="lead">Unleash Your Creative Potential with Our Easy-to-Use Portfolio Builder.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="examples">
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom text-white">Portfolios</h2>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-500 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('{% static 'images/pex1.png' %}');background-size: cover;">
+              <div class="d-flex flex-column-reverse h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+             
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-500 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('{% static 'images/pex2.png' %}');background-size: cover;">
+              <div class="d-flex flex-column-reverse h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+             
+              </div>
+            </div>
+          </div>
+
+         <div class="col">
+            <div class="card card-cover h-500 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('{% static 'images/pex3.png' %}');background-size: cover;">
+              <div class="d-flex flex-column-reverse h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-3 lh-1 fw-bold">Short title, long jacket</h2>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  {% endblock %}
